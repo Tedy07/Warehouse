@@ -1,6 +1,6 @@
 ﻿
 //stała
-const string FILE_NAME = "C:\\Warehouse\\ImportFile.xlsx";
+const string FILE_NAME = @"C:\Warehouse\ImportFile.xlsx";
 
 
 Console.WriteLine("Welcome to warehouse app!");
