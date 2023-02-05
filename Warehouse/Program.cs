@@ -1,26 +1,37 @@
 ﻿
+//week 2 lesson 2
 //stała
-const string FILE_NAME = @"C:\Warehouse\ImportFile.xlsx";
+
+class Program
+{
 
 
-Console.WriteLine("Welcome to warehouse app!");
-Console.WriteLine("Please let me know whate you want to do: ");
-Console.WriteLine("1. Add Item");
-Console.WriteLine("2. Remove Item");
-Console.WriteLine("3. Check Item");
-Console.WriteLine("Press 1,2 or 3 ...");
-
-string choice = Console.ReadLine();
-
-Console.WriteLine($"You have chosen option number: {choice}");
+    public const string FILE_NAME = @"C:\Warehouse\ImportFile.xlsx";
 
 
-// zmienna
+    static void Main(string[] args)
+    {
 
-int chosenOption = 0;
-Int32.TryParse(choice, out chosenOption);
+        Console.WriteLine("Welcome to warehouse app!");
+        Console.WriteLine("Please let me know whate you want to do: ");
+        Console.WriteLine("1. Add Item");
+        Console.WriteLine("2. Remove Item");
+        Console.WriteLine("3. Check Item");
+        Console.WriteLine("Press 1,2 or 3 ...");
 
-Console.WriteLine("Please choose another option ...");
+        string choice = Console.ReadLine();
 
-choice = Console.ReadLine();
- Int32.TryParse(choice, out chosenOption);
+        Console.WriteLine($"You have chosen option number: {choice}");
+
+
+        // zmienna
+
+        int chosenOption = 0;
+        Int32.TryParse(choice, out chosenOption);
+
+        Console.WriteLine("Please choose another option ...");
+
+        choice = Console.ReadLine();
+        Int32.TryParse(choice, out chosenOption);
+    }
+}
