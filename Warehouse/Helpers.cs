@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Warehouse
 {
-    public enum ItemTypes
+    public enum ItemType
     {
         Grocery =1,
         Clothing, 
